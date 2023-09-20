@@ -1,0 +1,42 @@
+@import url(variables.css);
+@import url(header.css);
+@import url(bubulles.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  display: flex;
+  width: var(--width-container);
+  margin: 0 auto;
+
+}
+
+.full-height {
+  height: calc(100vh - var(--height-header));
+}
+
+main > div{
+  width: 50%;
+  display: flex;
+
+}
+
+main > div:nth-child(1) img{
+  align-self: flex-end;
+  width: 100%;
+  max-height: 100%;
+}
+main > div:nth-child(2){
+  justify-content: center;
+  flex-direction: column;
+}
